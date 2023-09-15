@@ -1,0 +1,152 @@
+
+
+Store the git history in efficient way, commit id, review timestamp, merge timestamp
+Find target string permutation match among target string
+ reverse sort linkedList with given interface
+ most frequent digit value in number
+ maximun sum of sub array
+ JVM, race conditions, locking mechanism and Concurrent data structures
+ Count all sub arrays that has elements sum to a k number. Sub array can have more elements than the input array
+ Find duplicates in array and print the results
+ Merge 2 sorted number arrays into a single sorted array, removing any duplicates.
+ Maximum sum contiguous subarray
+ Write a program to calculate the sum of a list of integers, the partial integer sum could overflow, but the sum is guaranteed to be able to fit into a 32bit int type.
+
+ To design the system for a URL shortener like bitly.
+ The tech discussions went as deep as how are threads created and managed by the OS
+
+ A new user signs up and a new integer id is to be assigned to a newly created user. And this needs to happen in parallel And needs to be replicated across 5 data centers. Design a system to do the same.
+
+ Design an elevator system. Draw class diagram for same. The elevator system of the office building was very high-tech. If you are at elevator labelled `G` and you press the up button, you won't necessarily get elevator `G` but you might end up getting elevator labelled `F` if `F` is nearer.
+
+ How can you manage thousands of requests at the same time? All the requests cannot be processed at the same time. How are you gonna keep them waiting? Explain the architecture.
+
+Find a loop in a simply linked list
+Write code to synchronize different threads
+Find the numbers in the loop that the summation of which equal to some number
+
+Implement a queue using array
+Write an algorithm to reverse an array
+How would you design this system so that user gets optimal response?
+
+Write a function to filter alphanumeric characters from string.
+How would you test it?
+Why you didn't use regular expression?
+
+Design event tracking system
+
+Construct a tree from data, then print the tree
+
+you have a given text file with all the english words. u need to build a runnable service, to deploy it on github on private repository. the service should be running on a given port and have 2 api's 1. ?similar=aab 2. ?statistics  1. should return all English permutations: {"similar":["aba","baa"]} 2. statistacs {"totalWords":305000,"totalRequests":"5","avgProctimeTime":"1720404"} u can use any lang, the system should handle large scale requests
+
+how to store 1 million of integer number efficiently
+
+DFS in 2d array
+what is the difference betwee HashMap and HashSet?
+https://leetcode.com/explore/learn/card/hash-table/
+https://leetcode.com/discuss/interview-experience/550385/eBay-Software-Engineer-Interview
+https://www.careercup.com/page?pid=ebay-interview-questions
+https://leetcode.com/discuss/interview-experience/535788/Ebay-or-Sr.Software-engineer-or-Bay-area-CA-or-March-2020-Reject
+
+Given a array of elements where they asked me to print all the triplets where the sum of those triplets should be equal to 0
+Design a restaurant and parking lot in an Object oriented way with all the entity relationships
+Binary tree traversal
+Design ebay cart page using react.  
+Creating an application for 5 Card Draw.
+Phone Interview: how to process efficiently streaming of files.
+
+Heap construction
+design a checkers game
+explain priority queues  
+How to identify the lowest level common ancestor for a  given 2 nodes in a tree(not binary tree)
+what is deadlock and also asked for a tool or way to identify dead lock. ( basically the guy had no idea what he is asking for)
+
+Implement stack using queue and linkedlist
+
+Given two binary trees check if one is subtree of other.
+Verify if given series is a Fibonacci series or not.
+Reverse a doubly linked list.
+Given a BST with integer values and a key, find the closest node to the key. eg. for BST 1 4 7 15 and key 8 node 7 is to be returned.
+Some design based questions.  
+
+
+(1)Find maximum height of BST. This is easy using recursion. Then he asked me to do it iteratively, which I somehow managed to solve.
+(2)The Dutch flag problem. This was not tough. But the next question was tough. It was about finding particular keys in a dictionary. They have a custom function that tells you if a key is in the dictionary and you to find out if for given input, you get required output. For example --
+
+The dictionary is like:
+
+{hi,hello,sir,how, are, you}
+
+And you have a function isWord(x) that tells you if a particular word is in that dictionary.
+
+So if the input is hisirhowareyou
+the output must be hi sir how are you
+
+1. Implement a function that would accept two strings and check if one string is an anagram of the other.
+2. Given an array(list) of integers, write a function that would determine if the elements in the array can be divided into two parts each giving the same sum.
+3. Email address drop-down application. For example, when we type email address while composing an email, we get a drop down of suggested email address options starting with same letter(s). Write code to do this. (This was basically the implementation of trie data structure).  
+
+Backtracking related : 8 queen.
+Stacks, Heap and Tree.
+Array question  
+
+design a system that can create reports from huge data
+
+1 Answer
+counter=0
+ two threads a doing "for i = 0 ; i< 10; i++) counter++;
+ what are the possible values of counter
+
+1 Answer
+implement a stack that can return on o(1) the max value of the stack
+
+1 Answer
+design a checkers game
+
+1. Write a program to identify if two subnets collide.
+
+1 Answer
+2. Write program to convert a BST to heap (such as the largest number is root, the second largest is to the left of root, the third largest to right of root and so on)
+
+Technical Phone Screen(1 hour):
+
+Garbage Collection Java
+Dynamic and Static Binding
+Number of Islands : https://leetcode.com/problems/number-of-islands/description/
+given random5, write function random7: https://www.geeksforgeeks.org/generate-integer-from-1-to-7-with-equal-probability/
+Onsite Interview(4 rounds)
+
+First Round:
+Merge Sorted arrays: https://leetcode.com/problems/merge-sorted-array/description/
+FizzBuzz: https://leetcode.com/problems/fizz-buzz/description/
+Second Round:
+Copy List with Random Pointers: https://leetcode.com/problems/copy-list-with-random-pointer/
+Serialize and Deserialize a binary Tree: https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/
+Third Round:
+Number of Islands same as in Phone Interview
+Convert binary Tree to a Linked List : https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
+Fourth Round:
+Check if a given string is Palindrome: https://leetcode.com/problems/valid-palindrome/
+Longest Palindromic Substring: https://leetcode.com/problems/longest-palindromic-substring/
+
+
+Given a binary tree, return all root-to-leaf paths. ( exactly as leetcode number 257 )
+program to print all permutations of a given string
+onsite experience. Had 4 rounds of interview. 2 coding related, 1 manager and 1 design.
+
+Implement Queue using Stacks ( same as leetcode 232 ) senior mts person took the interview, was very polite. he asked about my projects in detail. and then asked simple coding question related to stack.
+Design and Implement a music player. ( design round ). initially they will start with your projects then dive into design in detail.
+managerial round. Here it was a general discussion on what projects i did in college, and was told about ebay culture and work.
+Design hashmap. Last round, this guy was rude as hell didn't listen to what i was conveying. after i explained him in detail about this problem, he went and asked about all the theory questions like final, finally finalize, string internal working. try with resources. (jeez all theory )
+its really easy you can get the offer if you have the habit of solving algorithmic problems daily. ( although not needed )
+
+Write a Dynamic Program for Knapsack Problem
+Implement max-pooling
+
+JSON response mapping to POJO class.
+finding maximum profit buying shell share
+implement tree and find a path from node to given node.
+hexadecimal to decimal
+different ways calling RestAPI
+code to implement generic class type passed as an argument in method
+print a consecutive character representation.

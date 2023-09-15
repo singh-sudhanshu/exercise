@@ -1,0 +1,37 @@
+search for top 100 most videos on Youtube
+search for top 10 most tweeted on Twitter
+
+Functional Requirement:
+
+return List<E> topK(k, startTime, endTime);
+Accurate
+Is the data streamed or unbounded, or it's a set of bounded records ?
+
+Non-functional Requirements:
+1) Scalable (Scale out together with the increasing amount of data)
+2) High Available (Should survive n/w, h/w etc failures, no single point of failure)
+3) Highly performant
+4) Security
+
+Solution for bounded dataset:
+
+1) Create a hash table to store the element frequency in the table.
+2) Use the Heap to store the top K element in the heap.
+3) Because sorting the element in the Map requires n(log(n))
+4) Using heap we can reduce the time complexity to n(log(k)) where k is the number of elements in the heap
+
+How to scale the solution:
+1) We need to partition the data onto the multiple nodes.
+2) Introduce the data partitioner which will partition the data among multiple hosts. It needs to load balance the data so use consistent hashing algorithm to consistently use all the nodes.
+3) Deploy the solution on every nodes.
+4) Each node will have it's own set of frequency table and heap in it's memory.
+5) To get the final result we need to combine the result from individual nodes. This can be done by merging the sorted list. A storage host will merge sorted list and store them.
+6) Still the bottleneck will be the single storage host.
+7) A client will maintain sorted list of nodes using their hash value in TreeMap and lookup the target node using binary search in O(lon(n)) time complexity.
+8) A configuration server like Zookeeper will be required to maintain the list of nodes.
+9) Data replication will be needed for High Availability.
+10) Protocol for eventual consistency or immediate consistency.
+
+Solution for un-bounded dataset:
+1) To process the live stream of data Map Reduce will be required and store them on HDFS
+
