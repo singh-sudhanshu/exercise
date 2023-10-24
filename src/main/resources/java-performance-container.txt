@@ -1,0 +1,11 @@
+Recommendations to run java app in container environment:
+
+1) Container CPU - 2
+2) Container Memory - 2--4GB
+3) Heap Size - 75%
+4) GC - Parallel
+
+How to achieve above.
+java --XX:+UseParallelGC -XX:MaxRamPercentage=75 -jar my-app.jar
+
+It's better to have less number but bigger nodes than smaller more number of nodes, because Java scales well up than out.
